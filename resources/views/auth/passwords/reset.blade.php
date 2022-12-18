@@ -15,6 +15,7 @@
   <div class="col s12 m6 l4 z-depth-4 card-panel border-radius-6 login-card bg-opacity-8">
     <form class="login-form" method="POST" action="{{ route('password.update') }}">
       @csrf
+      @method('PUT')
       <input type="hidden" name="token" value="{{ $token }}">
       <div class="row">
         <div class="input-field col s12">
